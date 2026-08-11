@@ -1,13 +1,13 @@
-#include <stdio.h> //stdio.h kütüphanesini kodumuza dahil ediyoruz
-#include <math.h>  //math.h kütüphanesini kodumuza dahil ediyoruz
+#include <stdio.h> //We include the stdio.h library in our code.
+#include <math.h>  //We include the math.h library in our code.
 #define PI_NUMBER_1 3.14 
 #define PI_NUMBER_2 3
 
-// Kodun başlangıcı
+// start in code
 
 int main(){
 	
-    //Değişkenler
+    //varibles
 
 	int op;
 	char devam;
@@ -33,14 +33,14 @@ int main(){
     float kareninCevresi;
     float dikdörtgeninCevresi;
 	
-    //Computer Eymen imzası
+    
 
 	printf("By Computer Eymen\n");
-	// do - while döngüsünün başlandıcı için do yazıp {süslü parantez} açıp kapatıyoz
+	// We start the do-while loop by writing 'do' and then opening and closing curly braces {curly braces}
 	do{
-		//seçenek istiyoruz
+		//We want options.
 	printf("Lütfen bi seçenek seçin:  \n1-Toplama \n2-Çıkarma \n3-Çarpma \n4-Bölme \n5-mod(kalan) bulma \n6-Aritmetik ortalama hesaplama \n7-PI sayısı ile işlem yapma \n8-Üçgen alanını hesaplama \n9-kare alanını bulma \n10-Dikdörtgenin alanını bulma\n11-Üçgenin çevresini hesaplama\n12-Karenin Çevresini bulma\n13-Dikdörtgenin çevresini bulma\n14-karekök\n15-Üs bulma\n--> ");
-	while(scanf(" %d",&op) != 1){ // Girdi kontrolü yapıyoruz
+	while(scanf(" %d",&op) != 1){ // We are performing input validation
 	
 	printf("geçersiz numara lütfen geçerli bi sayı girin: ");
 	
