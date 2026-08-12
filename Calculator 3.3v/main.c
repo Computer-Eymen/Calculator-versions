@@ -1,391 +1,382 @@
 #include <stdio.h> //We include the stdio.h library in our code.
-#include <math.h>  //We include the math.h library in our code.
-#define PI_NUMBER_1 3.14 
+#include <math.h> //We include the math.h library in our code.
+#define PI_NUMBER_1 3.14
 #define PI_NUMBER_2 3
 
 // start in code
 
-int main(){
-	
-    //varibles
+int main(){ 
 
-	int op;
-	char devam;
-	int sayi1 , sayi2,sayi3,sayi4,sayi5;
-    int toplamaSonucu;
-    int cikarmaIslemsonucu;
-    int carpmaIslemiSonucu;
-    int bolmeIslemiSonucu;
-    int kalanBulmaIslemSonucu;
-    double piIslemSayisi;
-    char sayiSecimi;
-	float aritmetikOrtalamaSonucu;
-    char IslemTuru;
-    double piIslemSonucu;
-    float us;
-    float usSonucu;
-    int karekokSayisi;
-    int karekokSonucu;
-    float taban , yukseklik, alan;
-    float kenar , kareninAlani;
-    float kisaKenar, uzunKenar, dikdörtgeninAlani;
-    float kenar1, kenar2, kenar3, ucgeninCevresi;
-    float kareninCevresi;
-    float dikdörtgeninCevresi;
-	
-    
+//variables 
 
-	printf("By Computer Eymen\n");
-	// We start the do-while loop by writing 'do' and then opening and closing curly braces {curly braces}
-	do{
-		//We want options.
-	printf("Lütfen bi seçenek seçin:  \n1-Toplama \n2-Çıkarma \n3-Çarpma \n4-Bölme \n5-mod(kalan) bulma \n6-Aritmetik ortalama hesaplama \n7-PI sayısı ile işlem yapma \n8-Üçgen alanını hesaplama \n9-kare alanını bulma \n10-Dikdörtgenin alanını bulma\n11-Üçgenin çevresini hesaplama\n12-Karenin Çevresini bulma\n13-Dikdörtgenin çevresini bulma\n14-karekök\n15-Üs bulma\n--> ");
-	while(scanf(" %d",&op) != 1){ // We are performing input validation
-	
-	printf("geçersiz numara lütfen geçerli bi sayı girin: ");
-	
-	while(getchar() != '\n');	
+int op; 
+char cont; 
+int number1 , number2, number3, number4, number5; 
+int collectionResult; 
+int subtractOperationresult; 
+int multiplicationOperationResult; 
+int partitionOperationResult; 
+int remainingFindingOperationResult; 
+double piOperationNumber; 
+char numberSelection; 
+float arithmeticAverageResult; 
+char ProcessTour; 
+double piOperationResult; 
+float us; 
+float usResult; 
+int square rootNumber; 
+int square rootResult; 
+float base , height, area; 
+float edge , area of ​​square; 
+float shortEdge, longEdge,Areaofrectangle; 
+float edge1, edge2, edge3, perimeteroftriangle; 
+perimeter of float square; 
+perimeter of float rectangle; 
+
+
+
+printf("By Computer Eymen\n"); 
+// We start the do-while loop by writing 'do' and then opening and closing curly braces {curly braces} 
+do{ 
+//We want options. 
+printf("Please select an option: \n1-Addition \n2-Subtraction \n3-Multiplication \n4-Division \n5-Finding the modulo (remainder) \n6-Calculating the arithmetic mean \n7-Operating with the number PI \n8-Calculating the area of ​​a triangle \n9-Finding the area of ​​a square \n10-Finding the area of ​​a rectangle\n11-Calculating the perimeter of a triangle\n12-Finding the perimeter of a square\n13-Finding the perimeter of a rectangle\n14-Square root\n15-Finding the exponent\n--> ");
+while(scanf(" %d",&op) != 1){ // We are performing input validation
+
+printf("Invalid number, please enter a valid number: ");
+
+while(getchar() != '\n');
 }
 
 switch(op){
-	
-	
+
 case 1:
 
-    printf("Lütfen 1.sayıyı girin: ");
-    while(scanf("%d", &sayi1) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
-}
-    
-    printf("Lütfen 2.sayıyı girin: ");
-    while(scanf("%d",&sayi2) != 1){
-		
-	printf("Geçersiz karakter Lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');
-		
+printf("Please enter the first number: ");
+while(scanf("%d", &sayi1) != 1){
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
 }
 
-  toplamaSonucu = sayi1 + sayi2;
-  
-  printf("Sonuç: %d", toplamaSonucu);
-  
-  break;
-  
- 
+printf("Please enter the second number: ");
+while(scanf("%d",&sayi2) != 1){
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
+}
+
+topicResult = sayi1 + sayi2;
+
+printf("Result: %d", topicResult);
+
+break;
 
 case 2:
 
-printf("Lütfen 1. sayıyı girin: ");
+printf("Please enter the first number: ");
 while(scanf("%d",&sayi1) != 1){
 
-	printf("Geçersiz karakter! sayı girin: ");
+printf("Invalid character! Enter a number: ");
 
-	while(getchar() != '\n');	
-	
+while(getchar() != '\n');
+
 }
 
-
-printf("Lütfen 2. sayıyı girin: ");
+printf("Please enter the second number: ");
 while(scanf("%d",&sayi2) != 1){
-	
-	printf("Geçersiz karakter! Lütfen sayı girin: ");
-	
-	while(getchar() != '\n');
+
+printf("Invalid character! Please enter a number: ");
+
+while(getchar() != '\n');
 }
 
 cikarmaIslemsonucu = sayi1 - sayi2;
 
-printf("Sonuç: %d",cikarmaIslemsonucu);
+printf("Result: %d",cikarmaIslemsonucu);
 
 break;
 
 case 3:
 
-printf("Lütfen 1. sayıyı girin: ");
+printf("Please enter the first number: ");
 while(scanf("%d",&sayi1) != 1){
 
-	printf("Geçersiz karakter! sayı girin: ");
+printf("Invalid character! Enter a number: ");
 
-	while(getchar() != '\n');	
-	
+while(getchar() != '\n');
+
 }
 
-
-printf("Lütfen 2. sayıyı girin: ");
+printf("Please enter the 2nd number: ");
 while(scanf("%d",&sayi2) != 1){
-	
-	printf("Geçersiz karakter! Lütfen sayı girin: ");
-	
-	while(getchar() != '\n');
+
+printf("Invalid character! Please enter a number: ");
+
+while(getchar() != '\n');
 }
 
 carpmaIslemiSonucu = sayi1 * sayi2;
 
-printf("Sonuç: %d",carpmaIslemiSonucu);
+printf("Result: %d",carpmaIslemiSonucu);
 
 break;
 
 case 4:
 
-    printf("Lütfen 1. sayıyı girin: ");
-    while(scanf("%d", &sayi1) != 1) {
-        printf("Geçersiz! Sayı girin: ");
-        while(getchar() != '\n');
-    }
+printf("Please enter the 1st number: ");
+while(scanf("%d", &sayi1) != 1) {
+printf("Invalid! Enter a number: ");
+while(getchar() != '\n');
+}
 
-    printf("Lütfen 2. sayıyı girin (0 olamaz): ");
-    while(1) { // Sonsuz döngü, doğru sayı girene kadar çıkmayacak
-        if(scanf("%d", &sayi2) != 1) {
-            printf("Geçersiz karakter! Lütfen bir sayı girin: ");
-            while(getchar() != '\n');
-        } else if (sayi2 == 0) {
-            printf("0'a bölemezsin! Lütfen 0'dan farklı bir sayı girin: ");
-        } else {
-            break; // Doğru sayı girildi, döngüden çık
-        }
-    }
+printf("Please enter the second number (cannot be 0): ");
+while(1) { // Infinite loop, will not exit until the correct number is entered
+if(scanf("%d", &sayi2) != 1) {
+printf("Invalid character! Please enter a number: ");
+while(getchar() != '\n');
+} else if (sayi2 == 0) {
+printf("You cannot divide by 0! Please enter a number other than 0: ");
+} else {
+break; // Correct number entered, exit loop
+}
+}
 
-    bolmeIslemiSonucu = sayi1 / sayi2;
-    printf("Sonuç: %d\n", bolmeIslemiSonucu);
-    break;
-    
+bolmeIslemiSonucu = sayi1 / sayi2;
+printf("Result: %d\n", divisionoperationresult);
+break;
+
 case 5:
 
-	printf("Lütfen 1. sayıyı girin: ");
-    while(scanf("%d", &sayi1) != 1) {
-        printf("Geçersiz! Sayı girin: ");
-        while(getchar() != '\n');
-    }
+printf("Please enter the first number: ");
+while(scanf("%d", &number1) != 1) {
+printf("Invalid! Enter a number: ");
+while(getchar() != '\n');
+}
 
-    printf("Lütfen 2. sayıyı girin (0 olamaz): ");
-    while(1) { // Sonsuz döngü, doğru sayı girene kadar çıkmayacak
-        if(scanf("%d", &sayi2) != 1) {
-            printf("Geçersiz karakter! Lütfen bir sayı girin: ");
-            while(getchar() != '\n');
-        } else if (sayi2 == 0) {
-            printf("0'a bölemezsin! Lütfen 0'dan farklı bir sayı girin: ");
-        } else {
-            break; // Doğru sayı girildi, döngüden çık
-        }
-    }
+printf("Please enter the second number (cannot be 0): ");
+while(1) { // Infinite loop, will not exit until the correct number is entered
+if(scanf("%d", &number2) != 1) {
+printf("Invalid character! Please enter a number: ");
+while(getchar() != '\n');
+} else if (number2 == 0) {
+printf("You cannot divide by 0! Please enter a number other than 0: ");
+} else {
+break; // Correct number entered, exit loop
+}
+}
 
-    kalanBulmaIslemSonucu = sayi1 % sayi2;
-    printf("Sonuç: %d\n", kalanBulmaIslemSonucu);
-    break;
-    
+remainderResult = number1 % number2;
+printf("Result: %d\n", remainderResult);
+break;
+
 case 6:
 
-	
-	
-	printf("Lütfen girilcek sayı miktarını seçin(2-5): ");
-	scanf(" %c",&sayiSecimi);
-	
-switch(sayiSecimi){case '2':
+printf("Please select the number to enter (2-5): ");
+scanf(" %c", &numberSelection);
 
-printf("Lütfen 1.sayıyı girin: ");
-    while(scanf("%d", &sayi1) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
+switch(numberSelection){case '2':
+
+printf("Please enter the 1st number: ");
+while(scanf("%d", &number1) != 1){
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
 }
-    
-    printf("Lütfen 2.sayıyı girin: ");
-    while(scanf("%d",&sayi2) != 1){
-		
-	printf("Geçersiz karakter Lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');
-		
+
+printf("Please enter the 2nd number: ");
+while(scanf("%d",&sayi2) != 1){
+
+printf("Invalid character. Please enter a valid character: ");
+
+while(getchar() != '\n');
+
 }
-  aritmetikOrtalamaSonucu = (float)(sayi1 + sayi2) / 2.0;
-  printf("Sonuç: %.2f", aritmetikOrtalamaSonucu);
-  break;
-  
+arithmeticAverageResult = (float)(sayi1 + sayi2) / 2.0;
+printf("Result: %.2f", arithmeticAverageResult);
+break;
+
 case '3':
 
-	printf("Lütfen 1.sayıyı girin: ");
-    while(scanf("%d", &sayi1) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
-}
-    
-    printf("Lütfen 2.sayıyı girin: ");
-    while(scanf("%d",&sayi2) != 1){
-		
-	printf("Geçersiz karakter Lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');
-		
+printf("Please enter the 1st number: ");
+while(scanf("%d", &sayi1) != 1){
+
+printf("Invalid characterInvalid character. Please enter a valid character: ");
+
+while(getchar() != '\n');
+
 }
 
-printf("Lütfen 3.sayıyı girin: ");
-    while(scanf("%d", &sayi3) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
-}
-    
-  aritmetikOrtalamaSonucu = (float)(sayi1 + sayi2 + sayi3) / 3.0;
-  
-  printf("Sonuç: %.2f", aritmetikOrtalamaSonucu);
-  
-  break;
-  
- case '4':
- 
- printf("Lütfen 1.sayıyı girin: ");
-    while(scanf("%d", &sayi1) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
-}
-    
-    printf("Lütfen 2.sayıyı girin: ");
-    while(scanf("%d",&sayi2) != 1){
-		
-	printf("Geçersiz karakter Lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');
-		
+printf("Please enter the 2nd number: ");
+while(scanf("%d",&sayi2) != 1){
+
+printf("Invalid character. Please enter a valid character: ");
+
+while(getchar() != '\n');
+
 }
 
-printf("Lütfen 3.sayıyı girin: ");
-    while(scanf("%d", &sayi3) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
+printf("Please enter the 3rd number: ");
+while(scanf("%d", &sayi3) != 1){
+
+printf("Invalid character. Please enter a valid character: ");
+
+while(getchar() != '\n');
+
 }
 
-printf("Lütfen 4.sayıyı girin: ");
-    while(scanf("%d", &sayi4) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
-}
- aritmetikOrtalamaSonucu = (float)(sayi1 + sayi2 + sayi3 + sayi4) / 4.0;
-  
-  printf("Sonuç: %.2f", aritmetikOrtalamaSonucu);
-  
-  break;
-  
-  case '5':
-  
-  printf("Lütfen 1.sayıyı girin: ");
-    while(scanf("%d", &sayi1) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
-}
-    
-    printf("Lütfen 2.sayıyı girin: ");
-    while(scanf("%d",&sayi2) != 1){
-		
-	printf("Geçersiz karakter Lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');
-		
-}
+arithmeticAverageResult = (float)(sayi1 + sayi2 + sayi3) / 3.0;
 
-printf("Lütfen 3.sayıyı girin: ");
-    while(scanf("%d", &sayi3) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
-}
+printf("Result: %.2f", arithmeticAverageResult);
 
-printf("Lütfen 4.sayıyı girin: ");
-    while(scanf("%d", &sayi4) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
-}
-
-printf("Lütfen 5.sayıyı girin: ");
-    while(scanf("%d", &sayi5) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
-}
-  
-   aritmetikOrtalamaSonucu = (float)(sayi1 + sayi2 + sayi3 + sayi4 + sayi5) / 5.0;
-  
-  printf("Sonuç: %.2f", aritmetikOrtalamaSonucu);
-  
-  
-    break;
-}
-	
 break;
-  
-  
+
+case '4':
+
+printf("Please enter the 1st number: ");
+while(scanf("%d", &number1) != 1){
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
+}
+
+printf("Please enter the 2nd number: ");
+while(scanf("%d",&number2) != 1){
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
+}
+
+printf("Please enter the 3rd number: ");
+while(scanf("%d", &number3) != 1){
+
+printf("Invalid character, please enter a valid character: "); ");
+
+while(getchar() != '\n');
+
+}
+
+printf("Please enter the 4th number: ");
+while(scanf("%d", &sayi4) != 1){
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
+}
+arithmeticAverageResult = (float)(sayi1 + sayi2 + sayi3 + sayi4) / 4.0;
+
+printf("Result: %.2f", arithmeticAverageResult);
+
+break;
+
+case '5':
+
+printf("Please enter the 1st number: ");
+while(scanf("%d", &sayi1) != 1){
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
+}
+
+printf("Please enter the 2nd number: ");
+while(scanf("%d",&sayi2) != 1){
+
+printf("Invalid character. Please enter a valid character: ");
+
+while(getchar() != '\n');
+
+}
+
+printf("Please enter the 3rd number: ");
+while(scanf("%d", &sayi3) != 1){
+
+printf("Invalid character. Please enter a valid character: ");
+
+while(getchar() != '\n');
+
+}
+
+printf("Please enter the 4th number: ");
+while(scanf("%d", &sayi4) != 1){
+
+printf("Invalid character. Please enter a valid character: ");
+
+while(getchar() != '\n');
+
+}
+
+printf("Please enter the 5th number: ");
+while(scanf("%d", &sayi5) != 1){
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
+}
+
+arithmeticAverageResult = (float)(sayi1 + sayi2 + sayi3 + sayi4 + sayi5) / 5.0;
+
+printf("Result: %.2f", arithmeticAverageResult);
+
+break;
+}
+
+break;
+
 case 7:
 
-printf("Lütfen bi sayı girin(pi = 3.14 olarak alınmıştır.): ");
-while(scanf("%lf", &piIslemSayisi) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
+printf("Please enter a number (pi = 3.14 is taken): ");
+while(scanf("%lf", &piOperationCount) != 1){
+
+printf("Invalid character, please enter a valid character Enter: ");
+
+while(getchar() != '\n');
+
 }
 
-switch(IslemTuru){
-	
+switch(OperationType){
+
 case '+':
 
-piIslemSonucu = PI_NUMBER_1 + piIslemSayisi;
+piOperationResult = PI_NUMBER_1 + piOperationCount;
 
-printf("Sonuç: %lf",piIslemSonucu);
+printf("Result: %lf",piOperationResult);
 
 break;
 
 case '-':
 
-piIslemSonucu = PI_NUMBER_1 - piIslemSayisi;
+piOperationResult = PI_NUMBER_1 - piOperationCount;
 
-printf("Sonuç: %lf",piIslemSonucu);
+printf("Result: %lf",piOperationResult);
 
 break;
 
 case 'x':
 
-piIslemSonucu = PI_NUMBER_1 * piIslemSayisi;
+piOperationResult = PI_NUMBER_1 * piOperationCount;
 
-printf("Sonuç: %lf",piIslemSonucu);
+printf("Result: %lf",piOperationResult);
 
 break;
 
 case ':':
 
-piIslemSonucu = PI_NUMBER_1 / piIslemSayisi;
+piOperationResult = PI_NUMBER_1 / piOperationCount;
 
-printf("Sonuç: %lf");
+printf("Result: %lf");
 
 break;
 }
@@ -393,246 +384,229 @@ break;
 
 case 8:
 
+printf("Please enter the length of the triangle's base: ");
+while(scanf("%f", &base) != 1){
 
+printf("Invalid character, please enter a valid character: ");
 
-printf("Lütfen üçgenin tabanının uzunluğunu girin: ");
-while(scanf("%f", &taban) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
+while(getchar() != '\n');
+
 }
 
-printf("Lütfen üçgenin yüksekliğinin uzunluğunu girin: ");
-while(scanf("%f", &yukseklik) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
+printf("Please enter the length of the triangle's height: ");
+while(scanf("%f", &height) != 1){
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
 }
 
-alan = taban * yukseklik / 2.0;
+area = base * height / 2.0;
 
-printf("Üçgenin alanı: %f", alan);
+printf("Area of ​​the triangle: %f", area);
 break;
 
 case 9:
 
+printf("Enter the length of one side of the square: ");
+while(scanf("%f", &side) != 1){
 
+printf("Invalid character, please enter a valid character: ");
 
-printf("Karenin Bir kenerının uzunluğunu girin: ");
-while(scanf("%f", &kenar) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
+while(getchar() != '\n');
+
 }
 
-kareninAlani = kenar * kenar;
+areaofsquare = side * side;
 
-printf("Karenin alanı: %f",kareninAlani);
+printf("Area of ​​the square: %f",areaofsquare);
 
 break;
 
 case 10:
 
+printf("Enter the length of the short side: ");
+while(scanf("%f", &shortSide) != 1){
 
+printf("Invalid character, please enter a valid character: ");
 
-printf("Kısa kenarın uzunluğunu giriniz: ");
-while(scanf("%f", &kisaKenar) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
+while(getchar() != '\n');
+
 }
 
-printf("Uzun kenarın uzunluğunu girin: ");
-while(scanf("%f", &uzunKenar) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
+printf("Enter the length of the long side: ");
+while(scanf("%f", &longSide) != 1){
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
 }
 
-dikdörtgeninAlani = kisaKenar * uzunKenar;
+rectangleArea = shortSide * longSide;
 
-printf("Dikdörtgenin alanı: %f",dikdörtgeninAlani);
+printf("Rectangle area: %f",rectangleArea);
 
 break;
 
 case 11:
 
+printf("Enter the length of the 1st side of the triangle: ");
+while(scanf("%f", &side1) != 1){
 
+printf("Invalid character, please enter a valid character: ");
 
-printf("Üçgenin 1. kenarının uzunluğunu girin: ");
-while(scanf("%f", &kenar1) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
+while(getchar() != '\n');
+
 }
 
-printf("Üçgenin 2. kenarının uzunluğunu girin: ");
-while(scanf("%f", &kenar2) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
+printf("Enter the length of the 2nd side of the triangle: ");
+while(scanf("%f", &side2) != 1){
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
 }
 
-printf("Üçgenin 3. kenarının uzunluğunu girin: ");
-while(scanf("%f", &kenar3) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
+printf("Enter the length of the 3rd side of the triangle: ");
+while(scanf("%f", &side3) != 1){
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
 }
 
-ucgeninCevresi = kenar1 + kenar2 + kenar3;
+trianglePerimeter = side1 +edge2 + edge3;
 
-printf("Üçgenin çevresi: %f", ucgeninCevresi);
+printf("Perimeter of the triangle: %f", trianglePerimeter);
 
 break;
 
 case 12:
 
+printf("Enter the length of one side of the square: ");
+while(scanf("%f", &side) != 1){
 
+printf("Invalid character, please enter a valid character: ");
 
+while(getchar() != '\n');
 
-printf("Karenin bir kenarının uzunluğunu girin: ");
-while(scanf("%f", &kenar) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
 }
-kareninCevresi = 4 * kenar;
+perimeterofsquare = 4 * edge;
 
-
-printf("Karenin çevresi: %f",kareninCevresi);
+printf("Perimeter of the square: %f",perimeterofsquare);
 
 break;
 
 case 13:
 
+printf("Enter the length of the short side: ");
+while(scanf("%f", &shortSide) != 1){
 
+printf("Invalid character, please enter a valid character: ");
 
-printf("Kısa kenarın uzunluğunu giriniz: ");
-while(scanf("%f", &kisaKenar) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
+while(getchar() != '\n');
+
 }
 
-printf("Uzun kenarın uzunluğunu girin: ");
-while(scanf("%f", &uzunKenar) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
+printf("Enter the length of the long side: ");
+while(scanf("%f", &longSide) != 1){
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
 }
 
-dikdörtgeninCevresi= 2 * (kisaKenar + uzunKenar);
+PerimeterOfRectangle = 2 * (shortSide + longSide);
 
-printf("Dikdörtgenin çevresi: %f",dikdörtgeninCevresi);
+printf("Perimeter of the rectangle: %f",PerimeterOfRectangle);
 
 break;
 
 case 14:
 
-printf("Lütfen karekökünü alacağınız sayıyı girin: ");
-while(scanf("%d", &karekokSayisi) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
+printf("Please enter the number whose square root you want to take: ");
+while(scanf("%d", &squareRootNumber) != 1){
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
 }
 
-if(karekokSayisi < 0){
-	
-printf("Negatif sayıların karekökü yoktur Lütfen tekrar deneyin: ");	
-while(scanf("%d", &karekokSayisi) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
+if(square root < 0){
+
+printf("Negative numbers do not have a square root. Please try again: ");
+
+while(scanf("%d", &square root) != 1){
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
 }
-	
+
 }else{
-	
-karekokSonucu = sqrt(karekokSayisi);
 
-printf("Sonuç: %d",karekokSonucu);	
-	
+square root result = sqrt(square root);
+
+printf("Result: %d", square root result);
+
 }
 
 break;
 
 case 15:
 
-   
-printf("Lütfen tabanı girin: ");
-while(scanf("%f", &taban) != 1){
-	
-printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-while(getchar() != '\n');	
-		
+printf("Please enter the base: ");
+while(scanf("%f", &base) != 1){
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
 }
 
-printf("Lütfen üstü girin: ");
+printf("Please enter the base: ");
 while(scanf("%f", &us) != 1){
-	
-	printf("Geçersiz karakter lütfen geçerli bi karakter girin: ");
-	
-	while(getchar() != '\n');	
-		
+
+printf("Invalid character, please enter a valid character: ");
+
+while(getchar() != '\n');
+
 }
 
-usSonucu = (float)pow(taban,us);
+usResult = (float)pow(base,us);
 
-printf("Sonuç: %f", usSonucu);
+printf("Result: %f", usResult);
 break;
 
 default:
-     printf("Geçersiz işlem seçtiniz.");
-     break;
+printf("You selected an invalid operation.");
+break;
 }
-    
-printf("\n Baska islem yapmak istiyor musunuz? (e/h): ");
-        scanf(" %c", &devam); // Baştaki boşluk, önceki \n karakterini temizler
 
+printf("\n Do you want to perform another operation? (y/n): ");
+scanf(" %c", &cont); // Leading space clears the previous \n character
 
-}	
+}
 
-// DÖNGÜ KONTROLÜ
-       
+// LOOP CONTROL
 
-     while(devam == 'e' || devam == 'E'); // 'E' veya 'e' yazıldığı sürece döner
-    
-    // 'H' harfine basıldığında  burası çalışcak
-    
-    printf("Program kapanıyo Computer Eymen iyi günler diler.\n");
-    
-    printf("Uygulamayı kapatmak için Enter tuşuna basın");
+while(cont == 'y' || cont == 'Y'); // Iterates as long as 'E' or 'e' is typed
 
-	
-    getchar();
-    getchar();
-    return 0;	
+// This will run when the 'N' key is pressed
+
+printf("The program is closing. Computer Eymen wishes you a good day.\n");
+
+printf("Press Enter to close the application");
+
+getchar();
+getchar();
+return 0;
 
 }
